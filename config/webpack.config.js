@@ -1,11 +1,12 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-// const { BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
+const { BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
 module.exports = {
   entry: {
     index: './src/index.js',
   },
   mode: 'none',
+  // mode: 'production',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '../dist'),
@@ -61,11 +62,12 @@ module.exports = {
     'sockjs-client': 'SockJS',
     antd: 'antd'
   },
+  devtool: 'cheap-module-eval-source-map',
   plugins: [
     new htmlWebpackPlugin({
       filename: 'index.html',
       template: './index.html',
     }),
-    // new BundleAnalyzerPlugin()
+    new BundleAnalyzerPlugin()
   ],
 };

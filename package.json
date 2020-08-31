@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "ali-oss-weiyi": "^6.10.17",
     "antd": "^4.4.3",
     "babel-plugin-import": "^1.13.0",
     "core-js": "^3.6.5",
