@@ -19,7 +19,7 @@ const methods = ["GET", "POST", "PUT", "DELETE", "HEAD"];
 
 const itemConfig = [
   {
-    label: "AccessKeyId ",
+    label: "AccessKeyId",
     name: "AccessKeyId",
     content: <Input autoComplete="off" placeholder="必填"></Input>,
     rules: [{ required: true }],
